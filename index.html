@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<head>
+  <title>Prime Arte</title>
+</head>
+
+<center>
+  <img src="logo.png" id="logo" alt="Logo Prime Arte" width="200px" ; padding="200px"></center>
+
+<form action="http://127.0.0.1:5000/image_edit" method="post">
+  <center>
+
+    <body>
+      <div id="site">
+        <label for="nome">NOME:</label>
+        <input type="text" id="nome" name="nome" maxlength="35" title="Texto com até 35 caracteres "><br><br>
+        <label for="email">EMAIL:</label>
+        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="É necessário um e-mail válido "><br><br>
+        <div class="form-group col-md-4">
+          <label>TELEFONE:</label>
+          <input type="text" id="telefone" name="telefone" class="form-control"
+            onkeypress="$(this).mask('(00) 0000-00009')">
+        </div>
+</form>
+<p>
+  <input type="submit" class="button" value="Gerar Imagem">
+</p>
+</center>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</div>
+
+
+
+
+</html>
